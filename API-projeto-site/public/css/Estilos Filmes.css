@@ -1,0 +1,37 @@
+.img_filme{
+    height: 300px;
+    width: auto;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titulo_filmes{
+    color: antiquewhite;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.trailer_filme{
+    align-items: center;
+}
+
+.botão_sorteio{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #06263e8f;
+    transition: background 1s;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    width: 35%;
+  }
+  
+  button:hover,
+  button:focus {
+    background: rgb(124, 1, 1);
+}

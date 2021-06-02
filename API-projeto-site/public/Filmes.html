@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes!</title>
+    <link rel="stylesheet" href="css/Estilos Cabeçalho e Home.css">
+    <link rel="stylesheet" href="css/Estilos Página Usuário.css">
+    <link rel="stylesheet" href="css/Estilos Filmes.css">
+</head>
+
+<body>
+
+
+    <!--INÍCIO DO CABEÇALHO-->
+    <div class="cabeçalho">
+        <div class="caixa">
+            <span>
+                <img src="https://static-asset-delivery.hasbroapps.com/d4d8ccc5d7283c12117ccb3db9024ed79cdf4fef/2dd838b06706a40cefcc25e6d549dfc8.png"
+                    alt="Logo da Página" class="logo_pag">
+            </span>
+
+            <nav>
+                <ul>
+                    <li><b> <a class="item_click" href="index.html"> Home </a> </b></li>
+                    <li><b><a class="item_click" href="Galeria de Imagens.html"> Imagens </a></b></li>
+                    <li class="item_selecionado"><b>Entrar</b></li>
+                    <li><b> <a class="item_click" href="Sobre.html"> Sobre </a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--FIM DO CABEÇALHO-->
+
+    <!--INÍCIO DO CABEÇALHO PARA USUÁRIOS-->
+    <div class="cabeçalho_user">
+        <div class="caixa_user">
+            <h2 class="titulo_user">Bem-vindo, <span id="b_usuário"></span>!</h2>
+            <nav>
+                <ul>
+                    <li><b> <a class="item_click" href="Usuario.html"> HQ's </a></b></li>
+                    <li class="item_selecionado"><b>Não sabe o que assistir? Guia de filmes da Marvel!</b></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--FIM DO CABEÇALHO PARA USUÁRIOS-->
+
+    <div class="div_tituloHQ">
+        <br>
+        <h2 class="titulo_pagHQ">Em dúvida de qual filme da Marvel© assistir?</h2>
+        <br>
+    </div>
+
+    <div class="HQ">
+        <button class="botão_sorteio" onclick="sorteio()">Sortear Filme</button>
+        <div id="filme1" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Capitão América: O Primeiro Vingador (2011)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d8/Capit%C3%A3o_Am%C3%A9rica_O_Primeiro_Vingador_-_Poster.jpg/250px-Capit%C3%A3o_Am%C3%A9rica_O_Primeiro_Vingador_-_Poster.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Ambientado durante a Segunda Guerra Mundial, o filme conta a história de Steve Rogers,
+                    um homem frágil e magro do Brooklyn que alista-se no exército. No entanto, por conta de
+                    a saúde frágil, é rejeitado.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/-006iHDHK34"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme2" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Capitã Marvel (2019)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/59/Captain_Marvel_%282018%29.jpg/250px-Captain_Marvel_%282018%29.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Carol Danvers (Brie Larson) é uma ex-agente da Força Aérea norte-americana, que,
+                    sem se lembrar de sua vida na Terra, é recrutada pelos Kree para fazer parte de seu
+                    exército de elite.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/_q3SH0dr17k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme3" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">O Incrível Hulk (2008)</h3>
+            <img src="https://i.pinimg.com/originals/15/5e/a7/155ea759b7f538e702e9a3000c438232.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Após um terrível incidente, Bruce Banner (Edward Norton) está escondido em uma favela
+                    carioca enquanto tenta conseguir uma planta que pode ser o antídoto para seus problemas
+                    os raios gama. Quando Banner se descuida, o militar consegue descobrir sua localização e
+                    parte com uma equipe para o Brasil.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/xjBAYL-lvW0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme4" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem de Ferro (2008)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/0/00/Iron_Man_poster.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante
+                    inventor. Ao ser sequestrado ele é obrigado por terroristas a construir uma arma
+                    devastadora mas, ao invés disto, constrói uma armadura de alta tecnologia que permite
+                    que fuja de seu cativeiro.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/JHQXkC4hqxY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme5" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem de Ferro 2 (2010)</h3>
+            <img src="https://img.elo7.com.br/product/zoom/26771F6/big-poster-filme-homem-de-ferro-2-lo04-tamanho-90x60-cm-iron-man.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Após confessar ao mundo ser o Homem de Ferro, Tony Stark (Robert Downey Jr.) passa a
+                    ser alvo do governo dos Estados Unidos, que deseja que ele entregue seu poderoso traje.
+                    Com a negativa, o governo passa a desenvolver um novo traje com o maior rival de Stark,
+                    Justin Hammer (Sam Rockwell).</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/oiV0HDDFzhc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme6" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Thor (2011)</h3>
+            <img src="https://i.pinimg.com/474x/5b/da/c7/5bdac7e55bbe77d5de08118c4e5dd059.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>O filme conta a história de Thor, o príncipe herdeiro de Asgard, banido à Terra e despojado de
+                    seus poderes depois que ele reinicia uma guerra antiga. Como seu irmão, Loki, planeja tomar o
+                    trono para ele mesmo, Thor deve provar ser digno e recuperar seu martelo, o Mjöllnir.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/GI-NJq82kH8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme7" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Os Vingadores (2012)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/69/The_Avengers_Cartaz.jpg/250px-The_Avengers_Cartaz.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Loki (Tom Hiddleston) retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende
+                    dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo cósmico
+                    dentro de instalações da S.H.I.E.L.D. e, com isso, adquire grandes poderes.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/KeNEGtsCWEk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme8" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem de Ferro 3 (2012)</h3>
+            <img src="https://hqrock.files.wordpress.com/2013/03/iron-man-3-official-poster-imax-caracters.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Quando Stark tem sua vida pessoal destruída, ele embarca em uma angustiante busca pelo
+                    responsável. Nessa jornada, a cada nova etapa, sua coragem será testada. Sem saída,
+                    Stark precisa sobreviver com seus próprios recursos, confiando na sua engenhosidade e
+                    instintos para proteger as pessoas próximas a ele.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/igfXmU1r_mc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme9" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Thor: O Mundo Sombrio (2012)</h3>
+            <img src="https://img.elo7.com.br/product/zoom/26786FD/big-poster-filme-thor-o-mundo-sombrio-lo01-tamanho-90x60-cm-geek.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Depois dos acontecimentos de Thor e Os Vingadores, Thor luta para restaurar o equilíbrio
+                    em todo o cosmo, mas uma raça antiga liderada pelo vingativo Malekith retorna para afundar
+                    novamente o universo em escuridão.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/BmCT2nQu90A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme10" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Capitão América: O Soldado Invernal (2014)</h3>
+            <img src="https://br.web.img3.acsta.net/pictures/14/02/03/20/36/257136.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Steve Rogers (Chris Evans) luta para cumprir seu papel no mundo moderno, em parceria com Natasha
+                    Romanoff (Scarlett Johansson), também conhecida como Viúva Negra. Eles precisam derrotar um
+                    poderoso e misterioso inimigo na cidade de Washington.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/CTdvZwwShqM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme11" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Os Guardiões da Galáxia - Vol. 1 (2014)</h3>
+            <img src="https://br.web.img3.acsta.net/r_1280_720/newsv7/14/05/16/20/44/4350540.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Peter Quill (Chris Pratt) foi abduzido da Terra quando ainda era criança. Adulto, fez carreira
+                    como saqueador e ganhou o nome de Senhor das Estrelas. Quando rouba uma esfera, na qual o poderoso
+                    vilão Ronan, da raça kree, está interessado, passa a ser procurado por vários caçadores de
+                    recompensas.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/6NQPa9Z4oRg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme12" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Os Guardiões da Galáxia - Vol. 2 (2017)</h3>
+            <img src="https://br.web.img2.acsta.net/c_310_420/pictures/17/03/03/19/15/268212.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Segue com o grupo já estabelecido e em uma jornada de autodescobrimento ao se depararem com uma
+                    figura do passado de Peter Quill,onde o foco da trama se torna os personagens e seu
+                    desenvolvimento, além de uma preparação para o que ainda está por vir no futuro da Marvel.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/4-i8nTNSQFI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme13" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Vingadores: A Era de Ultron (2015)</h3>
+            <img src="https://cinemacomrapadura.com.br/imagens/2015/02/20150226-avengers_age_of_ultron_ver12.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Tentanto proteger o planeta de ameaças como as vistas no primeiro Os Vingadores, Tony Stark busca
+                    construir um sistema de inteligência artifical que cuidaria da paz mundial. O projeto acaba dando
+                    errado e gera o nascimento do Ultron (voz de James Spader).</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/mpYlQm1DiHQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme14" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem Formiga (2015)</h3>
+            <img src="https://4.bp.blogspot.com/-i74HR1KJMQs/V9B1dC4WVdI/AAAAAAAAG7o/qnCzeymqI9ALUdMDxKttwl32viemfUGJwCLcB/s1600/homem-formiga.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Hank Pym (Michael Douglas) é o inventor da fórmula/ traje que permite o encolhimento. Anos depois da
+                    descoberta, precisa impedir que seu ex-pupilo Darren Cross (Corey Stoll) consiga replicar o feito e
+                    vender a tecnologia para HYDRA. Dr. Pym escolhe o trambiqueiro Scott Lang (Paul Rudd) à usar o traje
+                    do Homem-Formiga.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/wITUolzfkwI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div id="filme15" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Capitão América: Guerra Civil (2016)</h3>
+            <img src="https://cdn.cinepop.com.br/2015/12/capitaoamerica3_1-1.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Steve Rogers é o atual líder dos Vingadores, super-grupo de heróis formado por Viúva Negra,
+                    Feiticeira Escarlate, Visão, Falcão e Máquina de Combate. O ataque de Ultron fez com que os
+                    políticos buscassem algum meio de controlar os super-heróis, já que seus atos afetam toda a
+                    humanidade.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/Edwv8y5cWv4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme16" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Pantera Negra (2018)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/2/28/Black_Panther_2018.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>"Pantera Negra" acompanha T'Challa que, após os eventos de "Capitão América: Guerra Civil", volta
+                    para casa para a isolada e tecnologicamente desenvolvida nação africana de Wakanda, para assumir
+                    seu lugar como Rei. Entretanto, quando um velho inimigo reaparece no radar, a fibra de T'Challa
+                    como Rei e Pantera Negra é testada quando ele é levado a um conflito que coloca o destino de
+                    Wakanda e do mundo todo em risco.</p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/H6A6GvryOG8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme17" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem-Aranha: De Volta Ao Lar (2017)</h3>
+            <img src="https://img.elo7.com.br/product/zoom/2677B46/big-poster-filme-homem-aranha-de-volta-ao-lar-lo13-90x60-cm-marvel.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova
+                    York ao lado de sua tia May. Sob o olhar atento do mentor Tony Stark, Peter começa a abraçar sua
+                    nova
+                    identidade como Homem-Aranha e combate diariamente pequenos crimes nas redondezas. Ele acredita que
+                    encontrou a missão de sua vida quando o terrível vilão Abutre surge ameaçando a cidade. O problema é
+                    que a tarefa não será tão fácil como ele imaginava.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/2x-2iYxgMFU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme18" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Viúva-Negra (2021)</h3>
+            <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2019/12/EK2Q15yU0AIYCWY.jpg"
+                class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara
+                    para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União
+                    Soviética se desfaz.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/uNAxHLp7wv8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme19" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Doutor-Estranho (2017)</h3>
+            <img src="https://i.pinimg.com/originals/70/b6/2f/70b62f5b3c4af4f14692099e483fe5c9.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em
+                    sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/YUfWrIcX4zw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme20" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Thor Ragnarok (2017)</h3>
+            <img src="https://cinepop.com.br/wp-content/uploads/2017/08/thor3_16.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Após anos afastado, Thor retorna para casa e descobre que seu pai Odin, rei de Asgard, está
+                    desaparecido.
+                    Após encontrá-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa
+                    da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em
+                    Sakaar,
+                    um planeta do outro lado do universo. Agora, ele precisa correr contra o tempo para voltar a Asgard
+                    e
+                    impedir o Ragnarok, a destruição de seu mundo.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/UvNnqWLruXA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme21" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem-Formiga e Vespa (2018)</h3>
+            <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/20541-cartaz.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Scott Lang lida com as consequências de suas escolhas tanto como super-herói quanto como pai.
+                    Enquanto tenta reequilibrar sua vida com suas responsabilidades como o Homem-Formiga, ele é
+                    confrontado
+                    por Hope van Dyne e Dr. Hank Pym com uma nova missão urgente. Scott deve mais uma vez vestir o
+                    uniforme
+                    e aprender a lutar ao lado da Vespa, trabalhando em conjunto para descobrir segredos do passado.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/0HGBv7s1Y7E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme22" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Vingadores: Guerra Infinita (2018)</h3>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_769535-MLB27180957526_042018-O.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o
+                    maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las
+                    para infligir sua vontade maléfica sobre a realidade.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/OWQhzEhbyQI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme23" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Vingadores: Ultimato (2019)</h3>
+            <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/22271-cartaz.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e
+                    entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha
+                    Romanov lideram a resistência contra o titã louco.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/VBv8ILgZMbU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="filme24" class="filmes" style="display: none;">
+            <br>
+            <h3 class="titulo_filmes">Homem-Aranha: Longe de Casa (2019)</h3>
+            <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/21308-cartaz.jpg" class="img_filme">
+            <span class="desc_HQ">
+
+                <p>Peter Parker está em uma viagem de duas semanas pela Europa, ao lado de seus amigos de colégio,
+                    quando é surpreendido pela visita de Nick Fury. Convocado para mais uma missão heroica, ele precisa
+                    enfrentar vários vilões que surgem em cidades-símbolo do continente, como Londres, Paris e Veneza,
+                    e também a aparição do enigmático Mysterio.
+                </p>
+
+            </span>
+            <iframe class="trailer_filme" width="560" height="315" src="https://www.youtube.com/embed/vaw_8DoqXfk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+    </div>
+
+    <!--ÍNICIO DO RODAPÉ-->
+    <div class="info_rodapé">
+        <span class="texto_info">Feito com carinho por uma aluna Bandtec e fã da Carol Danvers. Copyright © 2021</span>
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+    function sorteio() {
+        var sorteio_filmes = parseInt(Math.random() * 24 + 1);
+
+        if (sorteio_filmes == 1) {
+            filme1.style.display = "block";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 2) {
+            filme2.style.display = "block";
+            filme1.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 3) {
+            filme3.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 4) {
+            filme4.style.display = "block"
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 5) {
+            filme5.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 6) {
+            filme6.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 7) {
+            filme7.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 8) {
+            filme8.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 9) {
+            filme9.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 10) {
+            filme10.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 11) {
+            filme11.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 12) {
+            filme12.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 13) {
+            filme13.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 14) {
+            filme14.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 15) {
+            filme15.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 16) {
+            filme16.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 17) {
+            filme17.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 18) {
+            filme18.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 19) {
+            filme19.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 20) {
+            filme20.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 21) {
+            filme21.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 22) {
+            filme22.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme23.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else if (sorteio_filmes == 23) {
+            filme23.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme24.style.display = "none";
+        }
+
+        else {
+            filme24.style.display = "block";
+            filme1.style.display = "none";
+            filme2.style.display = "none";
+            filme3.style.display = "none";
+            filme4.style.display = "none";
+            filme5.style.display = "none";
+            filme6.style.display = "none";
+            filme7.style.display = "none";
+            filme8.style.display = "none";
+            filme9.style.display = "none";
+            filme10.style.display = "none";
+            filme11.style.display = "none";
+            filme12.style.display = "none";
+            filme13.style.display = "none";
+            filme14.style.display = "none";
+            filme15.style.display = "none";
+            filme16.style.display = "none";
+            filme17.style.display = "none";
+            filme18.style.display = "none";
+            filme19.style.display = "none";
+            filme20.style.display = "none";
+            filme21.style.display = "none";
+            filme22.style.display = "none";
+            filme23.style.display = "none";
+
+        }
+
+    }
+</script>

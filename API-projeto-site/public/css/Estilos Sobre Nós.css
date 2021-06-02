@@ -1,0 +1,26 @@
+.titulo_sobrenós {
+    float: left;
+    color: white; 
+    font-family: sans-serif-didot;
+    font-size: 75px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+}
+
+.text_sobrenós{
+    color: white;
+    font-size: 22px;
+}
+
+.sobre_nós{
+    min-height: 640px;
+    width: 100%;
+    background-color: #06263e8f;
+    border-bottom: 5px solid #f0d807;
+}
+
+.subtitulo_sobrenós{
+    font-family: sans-serif-didot;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+}

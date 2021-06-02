@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se Agora!</title>
+    <link rel="stylesheet" href="css/Estilos Cabeçalho e Home.css">
+    <link rel="stylesheet" href="css/Estilos Cadastro e Login.css">
+    <script src="https://kit.fontawesome.com/6ce9315fcb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--INÍCIO DO CABEÇALHO-->
+    <div class="cabeçalho">
+        <div class="caixa">
+            <span>
+                <img src="https://static-asset-delivery.hasbroapps.com/d4d8ccc5d7283c12117ccb3db9024ed79cdf4fef/2dd838b06706a40cefcc25e6d549dfc8.png"
+                    alt="Logo da Página" class="logo_pag">
+            </span>
+
+            <nav>
+                <ul>
+                    <li><b> <a class="item_click" href="index.html"> Home </a> </b></li>
+                    <li><b><a class="item_click" href="Galeria de Imagens.html"> Imagens </a></b></li>
+                    <li class="item_selecionado"><b>Entrar</b></li>
+                    <li><b> <a class="item_click" href="Sobre.html"> Sobre </a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--FIM DO CABEÇALHO-->
+
+
+
+    <!--INÍCIO FORMULÁRIO CADASTRO-->
+    <div class="container">
+
+        <div class="content first_containt">
+            <div class="first_column">
+                <h2 class="título_cadastro bem-vinda">Bem-vinda de volta, Capitã!</h2>
+                <p class="descrição_cadastro">Que bom que continua conetcado conosco!</p>
+                <p class="descrição_cadastro">Agora, por favor, logue com suas credenciais.</p>
+                <button id="entrar" class="botão primeiro">Entrar</button>
+            </div>
+            <!--First Column-->
+
+            <div class="second_column">
+                <h2 class="título_cadastro dois">Criar uma conta</h2>
+
+                <div class="social_media">
+                    <ul class="lista_socialmedia">
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--Social Media-->
+
+                <p class="descrição_cadastro opção">Ou utilize o seu e-mail para o cadastro:</p>
+                <form class="FORMULÁRIO" id="form_cadastro">
+
+                    <label class="label_input">
+                        <i class="fas fa-signature"></i>
+                        <input id="cadastro_nome" name="nome" type="text" placeholder="Nome">
+                    </label>
+
+                    <label class="label_input">
+                        <i class="far fa-user"></i>
+                        <input id="cadastro_usuario" name="login" type="text" placeholder="Usuário">
+                    </label>
+
+                    <label class="label_input">
+                        <i class="fas fa-at"></i>
+                        <input id="cadastro_email" name="email" type="email" placeholder="E-mail">
+                    </label>
+
+                    <label fclass="label_input">
+                        <i class="fas fa-lock"></i>
+                        <input id="cadastro_senha" name="senha" type="password" placeholder="senha">
+                    </label>
+
+                    <label class="label_input">
+                        <i class="fas fa-book-open"></i>
+                        <select id="hq" name="selecionar_hq">
+                            <option value="0">- Selecione uma HQ favorita -</option>
+                            <option value="1">A morte do Capitão Marvel</option>
+                            <option value="2">A Maior Heroína da Terra</option>
+                            <option value="3">Inimigo Interior</option>
+                            <option value="4">Guerra Civil II</option>
+                            <option value="5">Capitã Marvel e Capitão Mar-Vell</option>
+                        </select>
+                    </label>
+
+                    <button onclick="return cadastrar()" method="POST" class="botão segundo">Cadastre-se!</button>
+                </form>
+                <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+
+            </div>
+            <!--Second Column-->
+
+        </div>
+        <!--First Containt-->
+
+
+        <div class="content second_containt">
+            <div class="first_column">
+                <h2 class="título_cadastro bem-vinda">Olá Capitã!</h2>
+                <p class="descrição_cadastro">Se ainda não faz parte do nosso universo,</p>
+                <p class="descrição_cadastro">cadastre-se já e inicie sua jornada com a gente!</p>
+                <button class="botão primeiro">Cadastre-se!</button>
+            </div>
+            <!--First Column-->
+
+            <div class="second_column">
+                <h2 class="título_cadastro dois">Entrar no mundo Marvel</h2>
+
+                <div class="social_media">
+                    <ul class="lista_socialmedia">
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li class="item_social"><a class="link_socialmedia" href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <!--Social Media-->
+
+                <p class="descrição_cadastro opção">Ou utilize seu e-mail para entrar em sua conta:</p>
+
+                <form id="form_login" class="FORMULÁRIO">
+
+                    <label>
+                        <i class="far fa-user"></i>
+                        <input name = "login" type="text" placeholder="Usuário">
+                    </label>
+
+                    <label>
+                        <i class="fas fa-lock"></i>
+                        <input name= "senha" type="password" placeholder="senha">
+                    </label>
+
+                    <button method= 'POST' onclick="return entrar()" class="botão segundo">Entrar</button>
+                    <a href="#" class="senha">Esqueceu sua senha?</a>
+                </form>
+
+            </div>
+            <!--Second Column-->
+
+        </div>
+        <!--Second Containt-->
+
+    </div>
+    <!--Container-->
+    <!--FIM DO FORMULÁRIO CADASTRO-->
+
+
+    <!--ÍNICIO DO RODAPÉ-->
+    <div class="info_rodapé">
+        <span class="texto_info">Feito com carinho por uma aluna Bandtec e fã da Carol Danvers. Copyright © 2021</span>
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+<script src="app2.js"></script>
+<script src="funcoes.js"></script>
+
+
+</body>
+</html>
+
+<script>
+    function cadastrar() {
+        //aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = `Página Cadastro.html`;
+
+            } else {
+
+                alert('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                //finalizar_aguardar();
+            }
+        });
+
+        return false;
+}
+
+    function entrar() {
+    
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+                    
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+
+                    window.location.href = 'Usuario.html';
+                });
+
+            } else {
+                
+                alert('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    // finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+
+
+</script>

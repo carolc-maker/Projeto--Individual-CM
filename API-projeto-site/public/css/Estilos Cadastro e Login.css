@@ -1,0 +1,339 @@
+.container {
+    display: flex;
+    border: 2px solid #670001;
+    justify-content: center;
+    align-items: center;
+    height: 135vh; 
+}
+
+.content{
+    background-color: white;
+     border-radius: 15px;
+     width: 73%;
+     height: 50%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    background-image: url(https://portalovertube.com/wp-content/uploads/2018/12/Capit%C3%A3.jpg);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    left: 0%
+}
+
+.first_containt{
+    display: flex;
+}
+
+.título_cadastro{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.título_cadastro.bem-vinda{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.título_cadastro.dois{
+    color: rgb(124, 1, 1);
+}
+
+.descrição_cadastro{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.descrição_cadastro.opção{
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+}
+
+.botão{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 190px;
+    align-self: center;
+}
+
+.botão.primeiro{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: background-color 0.5s;
+}
+
+.botão.primeiro:hover{
+    background-color: white;
+    color: black;
+}
+
+.botão.segundo{
+    background-color: rgb(124, 1, 1);
+    border: 1px solid white;
+    transition: background-color 0.5s;
+}
+
+.botão.segundo:hover{
+    background-color: #06263e;
+}
+
+.first_column{
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second_column{
+    width: 60%;
+    text-align: center;
+}
+
+.first_containt .second_column{
+    z-index: 12;
+}
+
+.social_media{
+    text-align: center;
+    padding-left: 185px;
+}
+
+.lista_socialmedia{
+    display: flex;
+    list-style-type: none;
+}
+
+.item_social{
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.link_socialmedia:not(:first-child){
+    margin-left: 10px;
+}
+
+.link_socialmedia .item_social{
+    transition: background-color 0.5s;
+}
+
+.link_socialmedia .item_social{
+    background-color: rgb(124, 1, 1);
+    color: white;
+    border-color: rgb(124, 1, 1);
+}
+
+.FORMULÁRIO{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-left: 140px;
+}
+
+.FORMULÁRIO input{
+    height: 40px;
+    border: none;
+    margin: 8px;
+}
+
+.FORMULÁRIO select{
+    height: 40px;
+    border: none;
+    margin: 8px;
+}
+
+.second_containt{
+    position: absolute;
+    display: flex;
+}
+
+.second_containt .first_column{
+    order: 2;
+    z-index: -1;
+}
+
+.second_containt .second_column{
+    order: 1;
+}
+
+.senha{
+    color: rgb(124, 1, 1);
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.senha::first.letter{
+    text-transform: capitalize;
+}
+
+.sign-in-js .first_containt .first_column,
+.sign-in-js .first_containt .second_column{
+    z-index: -1;
+}
+
+.sign-in-js .second_containt .second_column{
+    z-index: 11;
+}
+
+.sign-in-js .second_containt .first_column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    animation: slidein 3s;
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before{
+    animation: slideout 3s;
+
+    z-index: 12;
+}
+
+.sign-up-js .second_containt .first_column,
+.sign-up-js .second_containt .second_column{
+    z-index: -1;
+}
+
+.sign-up-js .first_containt .first_column{
+    z-index: 13;
+}
+
+.sign-up-js .first_containt .second_column{
+    z-index: 11;
+}
+
+.sign-in-js .first_containt .second_column{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 3s;
+}
+
+.sign-up-js .second_containt .second_column{
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 3s;
+}
+
+
+/*Animação CSS*/
+
+@keyframes slidein {
+    from{
+        left: 0;
+        width: 47%;
+    }
+
+    25%{
+        left: 10%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    to{
+        left: 60%;
+        width: 47%;
+    }
+}
+
+@keyframes slideout {
+    from{
+        left: 60%;
+        width: 47%;
+    }
+
+    25%{
+        left: 50%;
+        width: 50%;  
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    to{
+        left: 0;
+        width: 47%;
+    }  
+}
+
+@keyframes deslocamentoEsq {
+
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+    } 
+    
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDir {
+
+    from{
+        left: 0;
+        z-index: 12;
+    }
+
+    25%{
+        left: 80px;
+    }
+
+    50%{
+        left: 100px;
+    } 
+    
+    to{
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+
+
+
